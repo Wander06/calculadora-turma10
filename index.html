@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="layoutCalculadora">
+        <div id="bordaDoDisplay">
+            <div id="display">
+                <input type="text" id="input">
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button onclick="inserirNumero('**')">^</button></td>
+                <td><button onclick="raiz()">√</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserirNumero(7)">7</button></td>
+                <td><button onclick="inserirNumero(8)">8</button></td>
+                <td><button onclick="inserirNumero(9)">9</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="inserirNumero(4)">4</button>
+                </td>
+                <td><button onclick="inserirNumero(5)">5</button></td>
+                <td><button onclick="inserirNumero(6)">6</button></td>
+                <td><button onclick="inserirNumero('*')" >x</button></td>
+                <td><button onclick="inserirNumero('/')" >÷</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserirNumero(1)">1</button></td>
+                <td><button onclick="inserirNumero(2)">2</button></td>
+                <td><button onclick="inserirNumero(3)">3</button></td>
+                <td><button onclick="inserirNumero('+')" >+</button></td>
+                <td><button onclick="inserirNumero('-')" >-</button></td>
+
+            </tr>
+            <tr>
+                <td><button onclick="inserirNumero('0')">0</button></td>
+                <td><button onclick="inserirNumero('.')">.</button></td>
+                <td> <button onclick="resultado()">=</button></td>
+            </tr>
+        </table>
+        
+    
+        <button onclick="numeroPrimo()">Primo</button>
+    </div>
+</body>
+</html>
