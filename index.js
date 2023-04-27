@@ -7,7 +7,12 @@ function inserirNumero(numero){
 }
 
 function numeroPrimo(){
-    
+    var display = document.getElementById("input").value;
+
+    if(display == 2){
+        alert("É primo")
+    }
+    if(display == )
 }
 
 function raiz(){
