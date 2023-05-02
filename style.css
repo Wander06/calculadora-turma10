@@ -70,3 +70,12 @@ body{
     background-color: rgb(8, 10, 128);
     color: white;
 }
+
+#primo{
+    color: rgb(52, 218, 30);
+    position: absolute;
+    font-family: Andale Mono, monospace;
+    font-size: 20px;
+    bottom: 596px;
+    left: 150px;
+}
