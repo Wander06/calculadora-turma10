@@ -9,15 +9,40 @@
     <title>Calculadora</title>
 </head>
 <body>
+    <header id="cabecalho">
+        <p id="tituloDoCabecalho">Calculadora</p>
+    </header>
+    <div class="dropdown">
+        <button class="dropbtn">Histórico</button>
+        <div class="dropdown-content">
+            <a class="b" onclick="ultimoNumeroHistorico()">Ver último numero</a>
+            <a class="b" onclick="todoHistorico()">Ver todo o Histórico</a>
+            <a class="b" onclick="primeiroNumeroHistorico()">Ver o primeiro número</a>
+            <a class="b" onclick="limparHistorico()">Limpar histórico</a>
+        </div>
+    </div>
     <div id="layoutCalculadora">
         <div id="bordaDoDisplay">
-            <p id="primo"></p>
+            <p id="displaySecundario"></p>
             <div id="display">
                 <input type="text" id="input">
             </div>
         </div>
         <div id="tecladoCalculadora">
+            <p id="assinatura">Wander</p>
             <table>
+                <tr>
+                    <td><button class="minibutton" onclick="inserirNumero('abre')">(</button></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="minibutton" onclick="inserirNumero('fecha')">)</button></td>
+                </tr>
+                <tr>
+                    <td><button class="minibutton" onclick="apagarUltimoNumero()"><</button></td>
+                    <td><button class="minibutton" onclick="numeroPrimo()">P</button></td>
+                    <td><button class="minibutton" onclick="porcentagem()">%</button></td>
+                    <td><button class="minibutton" onclick="trocaSinal()">+/-</button></td>
+                </tr>
                 <tr>
                     <td><button class="buttonClear" onclick="limpar()">C</button></td>
                     <td><button class="button" onclick="inserirNumero('**')">^</button></td>
@@ -51,7 +76,9 @@
             </table>
         </div>
     </div>
-    <button onclick="numeroPrimo()">Primo</button>
-    <button onclick="verHistorico()">Histórico</button>
+    <div id="historico">
+        <h1 id="tituloHistorico"></h1>
+        <p id="textoHistorico"></p>
+    </div>
 </body>
 </html>
